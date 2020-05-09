@@ -1,14 +1,21 @@
-import React from 'react'
-import { FaCode } from "react-icons/fa";
+import React, { useEffect } from 'react';
+import Axios from 'axios';
 
 function LandingPage() {
+
+    useEffect(() => {
+Axios.post('/api/product/getProducs')
+  .then(response => {
+    if(response.data.success) {
+
+    } else {
+      alert('Failed to fetch product datas')
+    }
+  })
+    }, [])
+
     return (
         <>
-        <div className="app">
-            <FaCode style={{ fontSize: '4rem' }} /><br />
-            <span style={{ fontSize: '2rem' }}>Let's Start Coding!</span>
-        </div>
-        <div style={{ float:'right' }}>Thanks For Using This Boiler Plate by John Ahn</div>
         </>
     )
 }
