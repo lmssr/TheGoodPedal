@@ -10,7 +10,7 @@ function LandingPage() {
   const [Products, setProducts] = useState([])
 
   useEffect(() => {
-    Axios.post('/api/product/getProducs')
+    Axios.post('/api/product/getProducts')
       .then(response => {
         if(response.data.success) {
           setProducts(response.data.products)
@@ -22,7 +22,12 @@ function LandingPage() {
       })
     }, [])
 
+    const onLoadMore = () => {
+
+    }
+
     const renderCards = Products.map((product, index) => {
+
       return <Col lg={6} md={8} xs={24}>
             <Card
                 hoverable={true}
@@ -55,7 +60,7 @@ function LandingPage() {
         }
         <br /><br />
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <button onClick>Load More</button>
+          <button onClick={onLoadMore}>Load More</button>
         </div>
       </div>
       )
