@@ -1,0 +1,162 @@
+Searching 43 files for "5000"
+
+/Users/lucmosser/code/lmssr/nodejs/TheGoodPedal/client/src/setupProxy.js:
+    5          '/api',
+    6          createProxyMiddleware({
+    7:             target: 'http://localhost:5000',
+    8              changeOrigin: true,
+    9          })
+
+/Users/lucmosser/code/lmssr/nodejs/TheGoodPedal/client/src/components/utils/FileUpload.js:
+   66                  {Images.map((image, index) => (
+   67                      <div onClick={() => onDelete(image)}>
+   68:                         <img style={{ minWidth: '300px', width: '300px', height: '240px' }} src={`http://localhost:5000/${image}`} alt={`productImg-${index}`} />
+   69                      </div>
+   70                  ))}
+
+/Users/lucmosser/code/lmssr/nodejs/TheGoodPedal/client/src/components/utils/ImageSlider.js:
+   10                      <div key={index}>
+   11                          <img style={{ width: '100%', maxHeight: '150px' }}
+   12:                             src={`http://localhost:5000/${image}`} alt="productImage" />
+   13                      </div>
+   14                  ))}
+
+/Users/lucmosser/code/lmssr/nodejs/TheGoodPedal/server/index.js:
+   46  }
+   47
+   48: const port = process.env.PORT || 5000
+   49
+   50  app.listen(port, () => {
+
+4 matches across 4 files
+
+
+Searching 43 files for "5000"
+
+/Users/lucmosser/code/lmssr/nodejs/TheGoodPedal/client/src/setupProxy.js:
+    5          '/api',
+    6          createProxyMiddleware({
+    7:             target: 'http://localhost:5000',
+    8              changeOrigin: true,
+    9          })
+
+/Users/lucmosser/code/lmssr/nodejs/TheGoodPedal/client/src/components/utils/FileUpload.js:
+   66                  {Images.map((image, index) => (
+   67                      <div onClick={() => onDelete(image)}>
+   68:                         <img style={{ minWidth: '300px', width: '300px', height: '240px' }} src={`http://localhost:5000/${image}`} alt={`productImg-${index}`} />
+   69                      </div>
+   70                  ))}
+
+/Users/lucmosser/code/lmssr/nodejs/TheGoodPedal/client/src/components/utils/ImageSlider.js:
+   10                      <div key={index}>
+   11                          <img style={{ width: '100%', maxHeight: '150px' }}
+   12:                             src={`http://localhost:5000/${image}`} alt="productImage" />
+   13                      </div>
+   14                  ))}
+
+/Users/lucmosser/code/lmssr/nodejs/TheGoodPedal/server/index.js:
+   46  }
+   47
+   48: const port = process.env.PORT || 5000
+   49
+   50  app.listen(port, () => {
+
+4 matches across 4 files
+
+
+
+
+
+Searching 43 files for "3000"
+
+/Users/lucmosser/code/lmssr/nodejs/TheGoodPedal/client/package-lock.json:
+ 2329        "requires": {
+ 2330          "browserslist": "^4.11.0",
+ 2331:         "caniuse-lite": "^1.0.30001036",
+ 2332          "chalk": "^2.4.2",
+ 2333          "normalize-range": "^0.1.2",
+ ....
+ 2984        "integrity": "sha512-DCTr3kDrKEYNw6Jb9HFxVLQNaue8z+0ZfRBRjmCunKDEXEBajKDj2Y+Uelg+Pi29OnvaSGwjOsnRyNEkXzHg5g==",
+ 2985        "requires": {
+ 2986:         "caniuse-lite": "^1.0.30001038",
+ 2987          "electron-to-chromium": "^1.3.390",
+ 2988          "node-releases": "^1.1.53",
+ ....
+ 3170      },
+ 3171      "caniuse-lite": {
+ 3172:       "version": "1.0.30001038",
+ 3173:       "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001038.tgz",
+ 3174        "integrity": "sha512-zii9quPo96XfOiRD4TrfYGs+QsGZpb2cGiMAzPjtf/hpFgB6zCPZgJb7I1+EATeMw/o+lG8FyRAnI+CWStHcaQ=="
+ 3175      },
+ ....
+ 10595          "autoprefixer": "^9.6.1",
+ 10596          "browserslist": "^4.6.4",
+ 10597:         "caniuse-lite": "^1.0.30000981",
+ 10598          "css-blank-pseudo": "^0.1.4",
+ 10599          "css-has-pseudo": "^0.10.0",
+ .....
+ 11572            "integrity": "sha512-TpfK0TDgv71dzuTsEAlQiHeWQ/tiPqgNZVdv046fvNtBZrjbv2O3TsWCDU0AWGJJKCF/KsjNdLzR9hXOsh/CfA==",
+ 11573            "requires": {
+ 11574:             "caniuse-lite": "^1.0.30001035",
+ 11575              "electron-to-chromium": "^1.3.378",
+ 11576              "node-releases": "^1.1.52",
+
+/Users/lucmosser/code/lmssr/nodejs/TheGoodPedal/client/README.md:
+    8
+    9  Runs the app in the development mode.<br>
+   10: Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+   11
+   12  The page will reload if you make edits.<br>
+
+/Users/lucmosser/code/lmssr/nodejs/TheGoodPedal/client/yarn.lock:
+ 1910    dependencies:
+ 1911      browserslist "^4.6.1"
+ 1912:     caniuse-lite "^1.0.30000971"
+ 1913      chalk "^2.4.2"
+ 1914      normalize-range "^0.1.2"
+ ....
+ 2283    integrity sha512-rAjx494LMjqKnMPhFkuLmLp8JWEX0o8ADTGeAbOqaF+XCvYLreZrG5uVjnPBlAQ8REZK4pzXGvp0bWgrFtKaag==
+ 2284    dependencies:
+ 2285:     caniuse-lite "^1.0.30000955"
+ 2286      electron-to-chromium "^1.3.122"
+ 2287      node-releases "^1.1.13"
+ ....
+ 2292    integrity sha512-pWQv51Ynb0MNk9JGMCZ8VkM785/4MQNXiFYtPqI7EEP0TJO+/d/NqRVn1uiAN0DNbnlUSpL2sh16Kspasv3pUQ==
+ 2293    dependencies:
+ 2294:     caniuse-lite "^1.0.30000925"
+ 2295      electron-to-chromium "^1.3.96"
+ 2296      node-releases "^1.1.3"
+ ....
+ 2301    integrity sha512-2neU/V0giQy9h3XMPwLhEY3+Ao0uHSwHvU8Q1Ea6AgLVL1sXbX3dzPrJ8NWe5Hi4PoTkCYXOtVR9rfRLI0J/8Q==
+ 2302    dependencies:
+ 2303:     caniuse-lite "^1.0.30000974"
+ 2304      electron-to-chromium "^1.3.150"
+ 2305      node-releases "^1.1.23"
+ ....
+ 2448      lodash.uniq "^4.5.0"
+ 2449
+ 2450: caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000925:
+ 2451:   version "1.0.30000927"
+ 2452:   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000927.tgz#114a9de4ff1e01f5790fe578ecd93421c7524665"
+ 2453    integrity sha512-ogq4NbUWf1uG/j66k0AmiO3GjqJAlQyF8n4w8a954cbCyFKmYGvRtgz6qkq2fWuduTXHibX7GyYL5Pg58Aks2g==
+ 2454
+ 2455: caniuse-lite@^1.0.30000939, caniuse-lite@^1.0.30000955, caniuse-lite@^1.0.30000971, caniuse-lite@^1.0.30000974:
+ 2456:   version "1.0.30000974"
+ 2457:   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000974.tgz#b7afe14ee004e97ce6dc73e3f878290a12928ad8"
+ 2458    integrity sha512-xc3rkNS/Zc3CmpMKuczWEdY2sZgx09BkAxfvkxlAEBTqcMHeL8QnPqhKse+5sRTi3nrw2pJwToD2WvKn1Uhvww==
+ 2459
+ ....
+ 7680      autoprefixer "^9.4.9"
+ 7681      browserslist "^4.4.2"
+ 7682:     caniuse-lite "^1.0.30000939"
+ 7683      css-blank-pseudo "^0.1.4"
+ 7684      css-has-pseudo "^0.10.0"
+
+/Users/lucmosser/code/lmssr/nodejs/TheGoodPedal/client/src/components/views/LoginPage/LoginPage.js:
+   61                setTimeout(() => {
+   62                  setFormErrorMessage("")
+   63:               }, 3000);
+   64              });
+   65            setSubmitting(false);
+
+23 matches across 4 files

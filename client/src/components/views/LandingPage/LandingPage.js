@@ -8,9 +8,15 @@ const { Meta } = 'Card';
 function LandingPage() {
 
   const [Products, setProducts] = useState([])
+  const [Skip, setSkip] = useState(0)
+  const [Limit, setLimit] = useState(8)
 
   useEffect(() => {
-    Axios.post('/api/product/getProducts')
+    getProduct()
+    }, [])
+
+    const getProduct = () => {
+      Axios.post('/api/product/getProducts')
       .then(response => {
         if(response.data.success) {
           setProducts(response.data.products)
@@ -20,10 +26,12 @@ function LandingPage() {
           alert('Failed to fetch product datas')
         }
       })
-    }, [])
+    }
 
     const onLoadMore = () => {
+      let skip = Skip + Limit;
 
+      getProduct()
     }
 
     const renderCards = Products.map((product, index) => {
